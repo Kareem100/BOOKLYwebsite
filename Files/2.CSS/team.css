@@ -1,0 +1,62 @@
+.Ope
+{
+    font-size: 40px;
+}
+
+.saying
+{
+    width: 48.5%;
+    margin-left:1%;
+    margin-bottom: 2%;
+    float: left;
+    border: solid 1px grey;
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+.first-child
+{
+    margin: 2% 20%; 
+    width:60%;
+}
+
+.avatar
+{
+    width:12%;
+    margin: 3%;
+    float: left;
+}
+.WhoAndWhat
+{
+    float: left; 
+    padding: 3% 2%;
+    width: 82%;
+}
+.NAME
+{
+    color: #213d8a;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Hobo std;
+}
+.quote
+{
+    color: black;
+    font-family: Harlow solid;
+    line-height: 1em;
+
+    font-size: 18px;
+}
+
+@media (max-width: 700px)
+{
+    .saying
+    {
+        width: 100%;
+    }
+    .first-child
+    {
+         margin-left:1%;
+        margin-bottom: 2%;
+    }
+}

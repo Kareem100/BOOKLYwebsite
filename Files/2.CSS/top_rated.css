@@ -1,0 +1,257 @@
+/*
+
+@media (max-width:767px) =========== Extra Small ==========
+@media (min-width: 768px) ========= Small Screen =======
+@media (min-width: 992px) ========= Medium Screen ====================
+@media (min-width: 1200px)  ============ Large Screen ==========
+
+*/
+/* ========== Start Common Fields ========== */
+.Container
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.Top
+{
+    width: 400px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-weight: 700;
+    text-align: center;
+    border: groove green 1px;
+    background-color: #222;
+    box-shadow: 2px 2px 2px black
+}
+/* ========== End Common Fields ========== */
+
+/* =================== Start Styling The Left Box  =================== */
+.Left
+{
+    background: #333;
+    width: 46%;
+    margin: auto 1%;
+    border-radius: 10px;
+}
+
+.Separation
+{
+    height: 550px;
+    border-radius: 50px;
+    background-color: ;
+    width: 4%;
+    
+}
+.Line
+{
+    background-color: black;
+    width: 4px;
+    margin-left: 50%;
+    height: 100%;
+    box-shadow: 0px 0px 2px black;
+}
+
+.Right
+{
+    background: linear-gradient(45deg, #373B44, #4286f4);
+    width: 46%;
+    margin: auto 1%;
+    border-radius: 10px;
+}
+
+.bookname
+{
+    margin-left: 2%;
+    
+}
+.precentage
+{
+    float: right;
+    margin-right: 2%;
+}
+.progress
+{
+    width: 96%;
+    height:20px;
+    margin: auto 2%;
+    margin-top:.5%;
+    margin-bottom: 5%;
+}
+
+/* =================== End Styling The Left Box  =================== */
+
+
+/* =================== Start Styling The Right Box  =================== */
+
+.Right .cont
+{
+    position: relative;
+    width: 32%;
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+    display: flex;
+    float:left;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    transition: 0.5s;
+}
+.Right .cont:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .6);
+}
+.Right .cont:before
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .03);
+    pointer-events: none;
+    z-index: 1;
+}
+.percent
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+.percent .number
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+}
+.percent .number h3
+{
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: .5s;
+    
+}
+.cont:hover .percent .number h3
+{
+    color: #fff;
+    font-size: 60px;  
+}
+.percent .number h3 span
+{
+    color: #777;
+    font-size: 24px;
+}
+.cont:hover .percent .number h3 span
+{
+    color: #fff;
+}
+
+.TEXT
+{
+    position: relative;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s; 
+}
+.cont:hover .TEXT
+{
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transform: translate(15px, 15px);
+}
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+}
+.cont:nth-child(2) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(377 - (377*90) / 100);
+    stroke: #00ff43;
+}
+.cont:nth-child(3) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(377 - (377*81) / 100);
+    stroke: #FFF000;
+}
+.cont:nth-child(4) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(377 - (377*75) / 100);
+    stroke: #20457c;
+}
+.cont:nth-child(5) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(377 - (377*66) / 100);
+    stroke: #FE9000;
+}
+.cont:nth-child(6) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(377 - (377*53) / 100);
+    stroke: #C1292E;
+}
+.cont:nth-child(7) svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(377 - (377*38) / 100);
+    stroke: red;
+}
+
+/* =================== End Styling The Right Box  =================== */
+
+/* ================ Media Queries ============== */
+
+@media (max-width: 991px)
+{
+    
+    .Left, .Right, .Separation
+    {
+        width: 100%;
+        float: none;
+    }
+    .Separation
+    {
+        margin-left: 1%;
+        height: 20px;
+    }
+
+}

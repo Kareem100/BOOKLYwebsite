@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- For Responsive Mobile Devices-->
+        <title> Bookly.com </title>
+        <link rel="shortcut icon" href="../../Pictures/Others/Icon.png">
+        <link rel="stylesheet" href="../2.CSS/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../2.CSS/store.css" />
+        <link rel="stylesheet" href="../2.CSS/home.css">
+        <link rel="stylesheet" href="../2.CSS/top_rated.css">
+        <link rel="stylesheet" href="../2.CSS/team.css">
+        <link rel="stylesheet" href="../2.CSS/contact.css">
+    </head>
+    
+    <body ID="BODY">
+        
+        
+        <button class="btn btn-danger" ID="DARKMODE" onclick="ChangeTheme();">  </button>      
+        <!-- ================Start Home Section======================== -->
+        <div id="home">
+            
+            <!-- Start Navigation Bar -->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top NAV"> 
+                <a class="navbar-brand" href="Base.HTML"><img src="../../Pictures/Others/Logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#a">
+                    <span class="navbar-toggler-icon"></span> </button>
+               
+                <div class="collapse navbar-collapse" id="a">
+                    <ul class="navbar-nav ml-auto Ok">
+                        <li class="nav-item"> <a class="nav-link" href="#home"> Home </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#store"> Store </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#top_rated"> Top Rated </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#team"> Team </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#contact"> Contact </a> </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Navigation Bar --> 
+        </div>
+        
+         <!-- Start Image Slider -->
+        <div id="Carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#Carousel" data-slide-to="1"></li>
+                <li data-target="#Carousel" data-slide-to="2"></li>
+                <li data-target="#Carousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(../../Pictures/Others/3.jpg)"> </div>
+                <div class="carousel-caption text-center">  
+                    <h1> Welcome to BOOKLY </h1>
+                    <h5> Here You Can Find Your Book </h5>
+                    <a class="btn btn-outline-light btn-lg" href="#store">Get Started</a>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(../../Pictures/Others/2.jpg)"> </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(../../Pictures/Others/1.jpeg)"> </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item" style="background-image: url(../../Pictures/Others/0.jpg)"> </div>
+                
+            </div>
+            <!-- Next & Previous Buttons-->
+            <a class="carousel-control-prev" href="#Carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span> </a> 
+            <a class="carousel-control-next" href="#Carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span> </a> 
+            
+        </div>
+        <!-- End Image Slider -->
+        
+        <!-- ================End Home Section======================== -->
+           
+        <!-- ================Start Store Section======================== -->
+        <div id="store">
+            
+            <div class="Space"></div>
+			<header>
+				<h1 class="Ope"> Book Store </h1>  
+			</header>
+			<div class="wrapper">
+				<ul class="stage clearfix">
+
+					<li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header>
+                                    <div class="Overlay">  <br/>
+									<h1>Sir Patrick Moore</h1>
+									<span class="year">4 March 1923 - 9 December 2012</span> <br/>
+									<span class="rating">8 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> Stargazing Part 2 </h5>
+								<p>
+									In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 80$ </button>
+							</div> 
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Ahmed Khaled Tawfik</h1>
+									<span class="year">10 June 1962 - 2 April 2018</span> <br/>
+									<span class="rating">200 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> Joys of Cemetery </h5>
+								<p>
+									It is nice to have in your hands the last thing the professor wrote..this in itself gives the work its five stars without discussion, but the doctor taught me to say an opinion and not to compliment him.
+                                </p>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 90$ </button>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Ayman El Atoom</h1>
+									<span class="year">March 2, 1972 - 48 Years</span> <br/>
+									<span class="rating">12 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> Ninteen </h5>
+								<p>
+									it was a door that opens at all, and to the other life the most amazing, mysterious and magical. It is a chapter that separates two lives, between a silly and silly life, and a serious, confrontational life. 
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 82$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                    <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Herbert George Wells</h1>
+									<span class="year">September 21, 1866 - August 13, 1946</span> <br/>
+									<span class="rating">5 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> The Island of Doctor Moreau </h5>
+								<p>
+									The Island of Doctor Moreau is a science fiction novel. The text of the novel is the narration of Edward Prendick, a shipwrecked man rescued by a passing boat who is left on the island home of Doctor Moreau.. 
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 88$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                    <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Ebrahim Nasrahllah</h1>
+									<span class="year">September 21, 1866 - August 13, 1946</span> <br/>
+									<span class="rating">7 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> The Second Dog War </h5>
+								<p>
+									Dog War II is set against the backdrop of a Daesh-like group that has risen to power in an unnamed country. The Second War of the Dog is a masterful vision of a dystopian future in a nameless country, using fantasy and science fiction techniques.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 91$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                     <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Adel Esmat</h1>
+									<span class="year">September 21, 1959 - 61 Years</span> <br/>
+									<span class="rating">11 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> Tales of Yousef Tadros </h5>
+								<p>
+									Born into a working-class Coptic family in the provincial town of Tanta, in Egypt’s lush Nile Delta, Yusuf Tadrus is fascinated from a young age by light and shadow, spending his time drawing, making toys out of discarded objects he finds in the alley.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 57$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                     <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Ahmed Khaled Tawfik</h1>
+									<span class="year">10 June 1962 - 2 April 2018</span> <br/>
+									<span class="rating">200 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> Shabib </h5>
+								<p>
+									 The novel revolves around the "dystopia" template, which d. Ahmed Khaled Tawfiq, and he used it before in other works such as "Utopia" and "in the rat corridor". "Tawfiq" was keen on using narration and dialogue in the fluent Arabic language.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 70$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                     <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Sandra Serag</h1>
+									<span class="year">10 June 1962 - 2 April 2018</span> <br/>
+									<span class="rating">3 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> What's is not Revealed </h5>
+								<p>
+									 In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 67$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                     <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1>Jane Austen</h1>
+									<span class="year">December 16, 1775 - July 18, 1817</span> <br/>
+									<span class="rating">4 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> Pride and Prejudice </h5>
+								<p>
+									Bennet of Longbourn estate has five daughters, but his property is entailed and can only be passed to a male heir. His wife also lacks an inheritance, so his family will be destitute upon his death. despite the communal pressure to make a wealthy match.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 76$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                     <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1> Ernest Hemingway </h1>
+									<span class="year">	July 21, 1899 - July 2, 1961</span> <br/>
+									<span class="rating">68 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> The Old Man and The Sea </h5>
+								<p>
+									 A short novel written by the American author Ernest Hemingway in 1951 in Cuba, and published in 1952.[1] It was the last major work of fiction by Hemingway that was published during his lifetime.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 49$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                     <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1> Francis Scott Key Fitzgerald </h1>
+									<span class="year">	July 21, 1899 - July 2, 1961</span> <br/>
+									<span class="rating">34 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> The Great Gatsby </h5>
+								<p>
+									 Cast of characters living in the fictional towns of West Egg and East Egg on prosperous Long Island in the summer of 1922. The story primarily concerns the young and mysterious millionaire Jay Gatsby and his quixotic passion and obsession girl.
+								</p>     
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 99$ </button>
+							</div>
+						</div>
+					</li>
+                    
+                    <li class="scene">
+						<div class="book" onclick="return true">
+							<div class="cover"></div>
+							<div class="info">
+								<header class="text-center">
+                                    <div class="Overlay">  <br/>
+									<h1> George Orwell </h1>
+									<span class="year">	25 June 1903 - 	21 January 1950 </span> <br/>
+									<span class="rating">28 Books</span>
+                                    </div>
+								</header>
+                                <h5 class="bookName"> Nineteen Eighty-Four </h5>
+								<p>
+									 The story takes place in an imagined future, the year 1984, when much of the world has fallen victim to perpetual war, omnipresent government surveillance, historical negationism, and propaganda. Great Britain, known as Airstrip One.
+                                </p>
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#Modal"> Buy Now For 81$ </button>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+            
+            <!-- Start Modal -->
+            <div class="modal fade" id="Modal" role="dialog" aria-labelledby="Modallab" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="Modallab">Buying Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                        On average, 64.8% of the sticker price on new books goes back to the publisher (to cover the cost of development and normal business expenses), the author gets 11.6% in royalties, the freight company that ships the books get 1.2%, and the bookstore gets the rest. In the end, on average, just 4.5 cents (before taxes) on every dollar you pay for new textbooks represents profit to the store.
+                    </p>
+                      <p class="Con">
+                        Please Confirm Buying The Book.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Confirm</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+            
+        </div>
+        <!-- ================End Store Section======================== -->
+        
+        <!-- ================Start Portfolio Section======================== -->
+        <div id="top_rated" class="Container">
+            
+            <div class="Space"></div>
+            <header>
+				<h1 class="Ope"> Top Rated </h1>  
+			</header>
+            
+            <div class="Left float-sm-left">
+                
+                <h2 class="Top"> Top Selled Books </h2>
+                
+                <div class="prog">
+                    <span class="bookname">The Great Gatsby (Francis Scott Key Fitzgerald)</span>
+                    <span class="precentage">87%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 87%"></div>
+                </div>
+                <div class="prog">
+                    <span class="bookname">Pride and Prejudice (Jane Austen)</span>
+                    <span class="precentage">81%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 81%"></div>
+                </div>
+                <div class="prog">
+                    <span class="bookname">Joys of Cemetery (Ahmed Khaled Tawfiq)</span>
+                    <span class="precentage">79%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 79%"></div>
+                </div>
+                <div class="prog">
+                    <span class="bookname">What's is not Revealed (Sandra Serag) </span>
+                    <span class="precentage">71%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 71%"></div>
+                </div>
+                <div class="prog">
+                    <span class="bookname">Ninteen Eighty Four (George Orwell)</span>
+                    <span class="precentage">68%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 68%"></div>
+                </div>
+                <div class="prog">
+                    <span class="bookname">Ninteen (Ayman El Otool)</span>
+                    <span class="precentage">57%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 57%"></div>
+                </div>
+                
+                
+            </div>
+            
+            <div class="Separation float-sm-left">
+                <div class="Line"></div>
+            </div>
+            
+            <div class="Right float-sm-left">
+            
+                <h2 class="Top"> Top Readable Authors </h2>
+                
+                <div class="cont">
+                    <div class="suit">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="60" cy="60" r="60"></circle>
+                                <circle cx="60" cy="60" r="60"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>90<span>%</span></h3>
+                            </div>
+                        </div>
+                        <h3 class="TEXT">F. Fitzgerald</h3>
+                    </div>
+                </div>
+             
+                <div class="cont">
+                    <div class="suit">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="60" cy="60" r="60"></circle>
+                                <circle cx="60" cy="60" r="60"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>81<span>%</span></h3>
+                            </div>
+                        </div>
+                        <h3 class="TEXT">George Orwell</h3>
+                    </div>
+                </div>
+                
+                <div class="cont">
+                    <div class="suit">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="60" cy="60" r="60"></circle>
+                                <circle cx="60" cy="60" r="60"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>75<span>%</span></h3>
+                            </div>
+                        </div>
+                        <h3 class="TEXT">Jane Austen</h3>
+                    </div>
+                </div>
+                
+                <div class="cont">
+                    <div class="suit">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="60" cy="60" r="60"></circle>
+                                <circle cx="60" cy="60" r="60"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>66<span>%</span></h3>
+                            </div>
+                        </div>
+                        <h3 class="TEXT">Ahmed Tawfiq</h3>
+                    </div>
+                </div>
+                
+                <div class="cont">
+                    <div class="suit">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="60" cy="60" r="60"></circle>
+                                <circle cx="60" cy="60" r="60"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>53<span>%</span></h3>
+                            </div>
+                        </div>
+                        <h3 class="TEXT">Adel Esmat</h3>
+                    </div>
+                </div>
+                
+                <div class="cont">
+                    <div class="suit">
+                        <div class="percent">
+                            <svg>
+                                <circle cx="60" cy="60" r="60"></circle>
+                                <circle cx="60" cy="60" r="60"></circle>
+                            </svg>
+                            <div class="number">
+                                <h3>38<span>%</span></h3>
+                            </div>
+                        </div>
+                        <h3 class="TEXT">E.Hermingway</h3>
+                    </div>
+                </div>
+                
+            </div>
+            
+                <div class="clearfix"></div>
+        </div>
+        <!-- ================End Portfolio Section======================== -->
+        
+        <!-- ================Start Team Section======================== -->
+        <div id="team" class="Container">
+        
+        <div class="Space"></div>
+            <header>
+				<h1 class="Ope"> A Word From Our Directories </h1>  
+			</header>
+            
+            <div class="saying first-child">
+                <img class="avatar" src="../../Pictures/Others/Avatar.png">
+                <div class="WhoAndWhat">
+                    <h3 class="NAME"> Mohamed Aly El Feky </h3>
+                    <p class="quote ">
+                        A reader lives a thousand lives before he dies . . . The man who never reads lives only one.
+                        Until I feared I would lose it, I never loved to read. One does not love breathing.
+                    Think before you speak. Read before you think.</p>
+                </div>
+            </div>
+            <div class="saying">
+                <img class="avatar" src="../../Pictures/Others/Avatar2.png">
+                <div class="WhoAndWhat">
+                    <h3 class="NAME"> Kareem Saeed  </h3>
+                    <p class="quote ">
+                       Never trust anyone who has not brought a book with them.
+                       You can never get a cup of tea large enough or a book long enough to suit me.
+                    Reading is essential for those who seek to rise above the ordinary.
+                    a book which people praise and don’t read.</p>
+                </div>
+            
+            </div>
+            <div class="saying">
+            <img class="avatar" src="../../Pictures/Others/Avatar3.png">
+                <div class="WhoAndWhat">
+                    <h3 class="NAME"> Fatma Mohamed </h3>
+                    <p class="quote ">
+                        I find television very educating. Every time somebody turns on the set, I go into the other room and read a book.
+                    You don’t have to burn books to destroy a culture. Just get people to stop reading them.
+                    Reading one book is like eating one potato chip.</p>
+                </div>
+            </div>
+            <div class="saying">
+                <img class="avatar" src="../../Pictures/Others/Avatar5.png">
+                <div class="WhoAndWhat">
+                    <h3 class="NAME"> Marym Alaa </h3>
+                    <p class="quote ">
+                        Let’s be reasonable and add an eighth day to the week that is devoted exclusively to reading.
+                    The reading of all good books is like conversation with the finest (people) of the past centuries.
+                    In the case of good books, the point is not to see how many of them you can get through, but rather how many can get through to you.</p>
+                </div>
+            </div>
+            <div class="saying">
+                <img class="avatar" src="../../Pictures/Others/Avatar4.png">
+                <div class="WhoAndWhat">
+                    <h3 class="NAME"> Manar Mohamed </h3>
+                    <p class="quote ">
+                        The more that you read, the more things you will know. The more that you learn, the more places you’ll go.
+                    Books are a uniquely portable magic. I read a book one day and my whole life was changed.
+                    People say that life is the thing, but I prefer reading. Just don't get people to stop reading them.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            
+        </div>
+        <!-- ================End Team Section======================== -->
+        
+        <!-- ================Start Contact Section======================== -->
+        <div id="contact" class="Container text-center">
+        
+            <footer>
+                <img src="../../Pictures/Others/Logo.png">
+                <p class="summary">
+                    At our store there is a collection of marvelous <br/> and masterpiece books that will blow your mind .... <br/> hope you enjoyed in here. 
+                </p>
+                <p class="contacT">
+                    Contact Info <br/>
+                    (657)999-7777<br/>
+                    email@Bookly.com
+                </p>
+                <p class="follow"> Follow us on </p>
+                <img src="../../Pictures/Others/LogosWithoutFontAwesome.png" class="Icons">
+                <hr style="margin-top: 2rem; border-top: 2px solid black">
+                <img src="../../Pictures/Others/Icon.png" class="Icon">
+                <p class="rights"> All Rigts &copy; Are Reserved To Bookly.com &reg; Team&trade; </p>
+            </footer>
+        </div>
+        <!-- ================End Contact Section======================== -->
+        
+        <!-- ================Start Script======================== -->
+        <script src="../3.JavaScript/jquery-3.4.1.js"> </script>
+        <script src="../3.JavaScript/bootstrap.min.js"> </script>
+        <script src="../3.JavaScript/Script.js"> </script> 
+        <!-- ================End Script======================== -->
+    </body>
+</html>

@@ -1,0 +1,67 @@
+/*================== Start GLOBAL RULES ==================*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color:antiquewhite;
+    background: linear-gradient(90deg, #ADA996, #F2F2F2, #DBDBDB, #EAEAEA); /* Light Theme */
+    /*background: linear-gradient(90deg, #000000  , #434343);*/  /* Dark Theme */
+   
+}
+#DARKMODE
+{
+    position: fixed;
+    top:90%;
+    left: 5%;
+    width:40px;
+    height: 40px;
+    border-radius: 10px;
+    z-index: 5000;
+    background: url(../../Pictures/Others/contrast.png);
+    background-size: cover;
+}
+/*================== END GLOBAL RULES ==================*/
+
+/*=================Start Styling Navbar=================*/
+
+.navbar
+{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .6) !important;
+}
+
+.navbar-brand img
+{
+    height: 5rem;
+}
+
+.navbar-nav li 
+{
+    padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color:white;
+}
+.navbar-dark .navbar-nav .nav-link:active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color:gold;
+}
+/*=================End Styling Navbar=================*/
+
+/*=================Start Styling Slider=================*/
+.carousel-item
+{
+    height: 100vh;
+}
+/*=================End Styling Slider=================*/

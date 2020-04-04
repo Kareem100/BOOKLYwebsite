@@ -1,0 +1,351 @@
+
+.wrapper {
+    margin-left:1.5%;	
+	max-width: 100%;
+    
+}
+
+.stage {
+	list-style: none;
+	padding: 0;
+}
+/*************************************
+Build the scene and rotate on hover
+**************************************/
+
+.scene {
+	width: 260px;
+	height: 400px;
+	margin: 30px;
+	float: left;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.book {
+	width: 260px;
+	height: 400px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-130px);
+	-moz-transform: translateZ(-130px);
+	transform: translateZ(-130px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.book:hover {
+	-webkit-transform: rotateY(-78deg) translateZ(20px);
+	-moz-transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-78deg) translateZ(20px);
+    cursor: pointer;
+}
+
+/*************************************
+Transform and style the two planes
+**************************************/
+
+.book .cover, 
+.book .info {
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.book .cover  {
+	-webkit-transform: translateZ(150px);
+	-moz-transform: translateZ(150px);
+	transform: translateZ(150px);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.book .info {
+	-webkit-transform: rotateY(90deg) translateZ(130px);
+	-moz-transform: rotateY(90deg) translateZ(130px);
+	transform: rotateY(90deg) translateZ(130px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+
+/*************************************
+Shadow beneath the 3D object
+**************************************/
+
+.csstransforms3d .book::after {
+	content: '';
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 30px 50px rgba(0,0,0,0.3);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	-webkit-transform: rotateX(90deg) translateY(130px);
+	-moz-transform: rotateX(90deg) translateY(130px);
+	transform: rotateX(90deg) translateY(130px);
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .book:hover::after {
+	box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
+}
+
+/*************************************
+Book Information
+**************************************/
+.Space
+{
+    height:100px;
+}
+
+.Ope
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px black;
+    color: rgba(225, 225, 225, .1);
+    background-image: url(../../Pictures/Others/colors.jpg);
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate
+{
+    0%{background-position: left 0px top 10px;}
+    40%{background-position: left 800px top 10px;}
+}
+
+.info header {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 195px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+
+.info header h1 {
+	margin: 0 0 2px;
+	font-size: 1.4em;
+}
+
+.info header .rating {
+	border: 1px solid #FFF;
+	padding: 0px 3px;
+    position:relative;
+    top: 6rem;
+}
+.info .bookName
+{
+    margin-top:2px;
+    color: green;
+    font-weight: 700;
+    padding: 15px 0px 0px 18px;
+    border-top: 10px solid #555;
+}
+.info p {
+	padding: 0.5em 1.4em;
+	margin: 2px 0 0;
+	font-weight: 700;
+	color: #666;
+	line-height: 1.4em;
+    text-indent: 1em;
+	
+}
+
+.info .btn
+{
+    position:relative;
+    left:48%;
+    margin-top: -3%;
+}
+
+/*************************************
+Generate "lighting" using box shadows
+**************************************/
+
+.book .cover,
+.book .info,
+.book .info header {
+	-webkit-transition: box-shadow 350ms;
+	-moz-transition: box-shadow 350ms;
+	transition: box-shadow 350ms;
+}
+
+.csstransforms3d .book .cover {
+	box-shadow: inset 0px 0px 40px rgba(255,255,255,0);
+}
+
+.csstransforms3d .book:hover .cover {
+	box-shadow: inset 300px 0px 40px rgba(255,255,255,0.8);
+}
+
+.csstransforms3d .book .info, 
+.csstransforms3d .book .info header {
+	box-shadow: inset -300px 0px 40px rgba(0,0,0,0.5);
+}
+
+.csstransforms3d .book:hover .info, 
+.csstransforms3d .book:hover .info header {
+	box-shadow: inset 0px 0px 40px rgba(0,0,0,0);
+}
+
+/*************************************
+Posters and still images
+**************************************/
+
+.scene:nth-child(1) .book .cover {
+  background-image: url(../../Pictures/Books/0.png);
+}
+
+.scene:nth-child(2) .cover {
+  background-image: url(../../Pictures/Books/1.png);
+}
+
+.scene:nth-child(3) .cover {
+  background-image: url(../../Pictures/Books/2.png);
+}
+
+.scene:nth-child(4) .cover {
+  background-image: url(../../Pictures/Books/3.png);
+}
+
+.scene:nth-child(5) .cover {
+  background-image: url(../../Pictures/Books/4.png);
+}
+
+.scene:nth-child(6) .cover {
+  background-image: url(../../Pictures/Books/5.png);
+}
+
+.scene:nth-child(7) .cover {
+  background-image: url(../../Pictures/Books/6.png);
+}
+
+.scene:nth-child(8) .cover {
+  background-image: url(../../Pictures/Books/7.png);
+}
+
+.scene:nth-child(9) .cover {
+  background-image: url(../../Pictures/Books/20.png);
+}
+
+.scene:nth-child(10) .cover {
+  background-image: url(../../Pictures/Books/21.png);
+}
+
+.scene:nth-child(11) .cover {
+  background-image: url(../../Pictures/Books/22.png);
+}
+
+.scene:nth-child(12) .cover {
+  background-image: url(../../Pictures/Books/23.png);
+}
+
+
+.scene:nth-child(1) .info header {
+	background-image: url(../../Pictures/Authors/0.Patrick%20Moore.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.scene:nth-child(2) .info header {
+	background-image: url(../../Pictures/Authors/1.Ahmed%20Khaled%20Tawfil.jpg);
+}
+
+.scene:nth-child(3) .info header {
+	background-image: url(../../Pictures/Authors/2.Ayman_otoom.jpg);
+}
+
+.scene:nth-child(4) .info header {
+	background-image: url(../../Pictures/Authors/3.Herbert%20George%20Wells.jpg);
+}   
+
+.scene:nth-child(5) .info header {
+	background-image: url(../../Pictures/Authors/4.Ebrahim%20Nassrahllah.jpg);
+}
+
+.scene:nth-child(6) .info header {
+	background-image: url(../../Pictures/Authors/5.Adel%20Esmat.jpg);
+}   
+
+.scene:nth-child(7) .info header {
+	background-image: url(../../Pictures/Authors/1.Ahmed%20Khaled%20Tawfil.jpg);
+}
+
+.scene:nth-child(8) .info header {
+	background-image: url(../../Pictures/Authors/6.Sandra%20Serag.jpg);
+}   
+
+.scene:nth-child(9) .info header {
+	background-image: url(../../Pictures/Authors/7.Jane%20Austen.jpg);
+}
+
+.scene:nth-child(10) .info header {
+	background-image: url(../../Pictures/Authors/8.Ernest%20Hemingway.jpg);
+}   
+
+.scene:nth-child(11) .info header {
+	background-image: url(../../Pictures/Authors/9.Francis%20Scott%20Key%20Fitzgerald.jpg);
+}
+
+.scene:nth-child(12) .info header {
+	background-image: url(../../Pictures/Authors/10.George%20Orwell.jpg);
+}   
+
+.Overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.year
+{
+    position: relative;
+    top: 6rem;
+}
+/*************************************
+Fallback
+**************************************/
+.no-csstransforms3d .book .cover, 
+.no-csstransforms3d .book .info {
+	position: relative;
+}
+
+.modal-title, .Con
+{
+    color: black;
+    font-weight: 700
+}
+.modal-body
+{
+    color: black;
+}
+
+/*************************************
+Media Queries
+**************************************//*
+@media (max-width: 1360px)
+{
+    .wrapper {
+        width:100%;
+        position:relative;
+        left:0%;
+    }
+    
+}
+*/
